@@ -18,6 +18,10 @@ import org.gradle.gradlebuild.unittestandcompile.ModuleType
 
 apply from: 'templates.gradle'
 
+repositories {
+    maven { url ="https://oss.sonatype.org/content/repositories/snapshots" }
+}
+
 dependencies {
     compile project(':distributionsDependencies')
 

@@ -21,6 +21,10 @@ plugins {
     gradlebuild.classycle
 }
 
+repositories {
+    maven { url = uri("https://oss.sonatype.org/content/repositories/snapshots") }
+}
+
 dependencies {
     // so that all Gradle features are available
     val allTestRuntimeDependencies: DependencySet by rootProject.extra
